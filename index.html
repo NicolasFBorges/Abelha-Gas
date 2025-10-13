@@ -2,11 +2,17 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Abelha Gás - Entrega rápida de GLP 24h. Preço justo e segurança garantida. Peça agora pelo WhatsApp!">
+    <meta name="theme-color" content="#D92332">
     <title>Abelha Gás - O Gás Mais Rápido da Cidade!</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.ico">
     <!-- Carregamento do Tailwind CSS para utilitários de estilo e responsividade -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Link para o novo arquivo CSS externo -->
     <link rel="stylesheet" href="style.css">
@@ -27,6 +33,7 @@
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif'],
                     },
                 }
             }
@@ -34,23 +41,24 @@
     </script>
 </head>
 
-<body class="text-text-dark antialiased">
+<body class="text-text-dark antialiased scroll-smooth overflow-x-hidden">
 
     <!-- Header Fixo (Responsivo) -->
-    <header class="sticky top-0 z-10 bg-white shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2 sm:py-3 flex flex-row justify-between items-center gap-2">
             <!-- Logo (Utilizando a URL de placeholder com as cores da logo) -->
-            <a href="#" class="flex items-center space-x-2">
+            <a href="#" class="flex items-center flex-shrink-0">
                 <img src="images/LOGO ABELHA.png" 
                      alt="Logo Abelha Gás" 
-                     class="h-10 w-auto rounded-lg"
+                     class="h-8 sm:h-10 md:h-12 w-auto rounded-lg"
                      onerror="this.onerror=null;this.src='images/LOGO ABELHA.png'">
             </a>
             
             <!-- Botão de CTA no Header (Visível em Mobile e Desktop) -->
-            <a href="https://wa.me/seu-numero" target="_blank" class="cta-button 
-               bg-primary-red text-white text-sm font-semibold 
-               py-2 px-4 rounded-full shadow-lg hover:bg-red-700 transition duration-300">
+            <a href="https://wa.me/+5564999635406" target="_blank" class="cta-button flex-shrink-0
+               bg-primary-red text-white text-xs sm:text-sm md:text-base font-semibold font-display
+               py-2 px-3 sm:px-4 md:px-6 rounded-full shadow-lg hover:bg-red-700 
+               transition-all duration-300 hover:scale-105 whitespace-nowrap">
                 LIGAR AGORA
             </a>
         </div>
@@ -58,186 +66,251 @@
 
     <main>
         <!-- 1. Hero Section - Proposta de Valor e CTA Primário -->
-        <section class="bg-white pt-16 pb-20 sm:pt-24 sm:pb-32">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:space-x-12">
+        <section class="bg-white pt-8 pb-12 sm:pt-16 sm:pb-20 lg:pt-24 lg:pb-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12">
                 
                 <!-- Conteúdo de Texto e CTA -->
-                <div class="lg:w-1/2 text-center lg:text-left">
-                    <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight text-text-dark mb-4">
+                <div class="flex-1 w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-text-dark mb-4 sm:mb-6 font-display">
                         <span class="text-primary-red">Abelha Gás:</span> O Seu Gás Chega Mais Rápido que um Zunido!
                     </h1>
-                    <p class="text-xl sm:text-2xl text-gray-600 mb-8 font-medium">
+                    <p class="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 font-medium max-w-2xl">
                         Entrega de GLP Rápida, Segura e com o Preço Mais Justo.
                     </p>
                     
                     <!-- Botão de CTA Principal (Maior Destaque) -->
-                    <a href="https://wa.me/seu-numero" target="_blank" class="cta-button inline-block 
-                       bg-primary-red text-white text-xl font-bold uppercase 
-                       py-4 px-10 rounded-full shadow-2xl shadow-primary-red/50 
-                       hover:bg-red-700 transition duration-300 transform hover:scale-105">
-                        <span class="mr-2 inline-block"><img src="images/icons8-whatsapp.gif" alt="WhatsApp" class="w-8 h-8 inline-block"></span> PEDIR GÁS PELO WHATSAPP!
+                    <a href="https://wa.me/+5564999635406" target="_blank" class="cta-button flex flex-row items-center justify-center gap-2
+                       bg-primary-red text-white text-sm sm:text-base md:text-lg lg:text-xl font-bold uppercase font-display
+                       py-3 px-6 sm:py-4 sm:px-8 lg:px-10 rounded-full shadow-2xl shadow-primary-red/50 
+                       hover:bg-red-700 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
+                        <span class="flex-shrink-0">
+                            <img src="images/icons8-whatsapp-48.png" alt="WhatsApp" class="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8">
+                        </span>
+                        <span class="whitespace-nowrap">PEDIR GÁS PELO WHATSAPP!</span>
                     </a>
-                    <p class="mt-4 text-orange-super font-bold text-lg">
-                        Disponível 24h em toda a região.
+                    <p class="mt-4 sm:mt-6 text-orange-super font-bold text-base sm:text-lg md:text-xl font-display">
+                        Disponível das 08h às 20h em toda a região.
                     </p>
                 </div>
 
                 <!-- Imagem Destaque (Logo da Abelha ou Cilindro) -->
-                <div class="lg:w-1/2 mt-12 lg:mt-0 relative flex justify-center">
+                <div class="flex-1 w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center items-center">
                     <!-- Placeholder visualmente atraente que lembra o mascote -->
-                    <div class="p-8 bg-accent-gold rounded-full shadow-xl w-64 h-64 sm:w-80 sm:h-80 flex items-center justify-center">
+                    <div class="p-4 sm:p-6 bg-accent-gold rounded-full shadow-xl w-64 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 flex items-center justify-center">
                          <img src="images/bg-abelha.png" 
                             alt="Mascote Abelha Gás com Botijão" 
-                            class="rounded-full shadow-2xl"
-                            onerror="this.onerror=null;this.src='images/bg-abelha.png'"">
+                            class="rounded-full w-full h-full object-cover"
+                            onerror="this.onerror=null;this.src='images/bg-abelha.png'">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- 2. Seção de Diferenciais (Confiança) -->
-        <section class="py-16 bg-neutral-blue/10">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-text-dark mb-12">
+        <section class="py-12 sm:py-16 lg:py-20 bg-neutral-blue/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-text-dark mb-8 sm:mb-12 text-center font-display">
                     Por Que Escolher a Abelha Gás?
                 </h2>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="w-full flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap gap-6 sm:gap-8 justify-center items-stretch">
                     
                     <!-- Diferencial 1: Rapidez -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:shadow-xl hover:scale-[1.02] transition duration-300 border-b-4 border-primary-red">
-                        <div class="text-5xl text-primary-red mb-4">⚡</div>
-                        <h3 class="text-xl font-bold mb-3 text-text-dark">Entrega Ultra Rápida</h3>
-                        <p class="text-gray-600">Nosso sistema de logística garante o botijão na sua porta em minutos. Velocidade de Abelha!</p>
+                    <div class="flex-1 bg-white p-6 sm:p-8 rounded-xl shadow-lg transform hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border-b-4 border-primary-red flex flex-col items-center text-center min-w-[250px] md:max-w-[350px]">
+                        <div class="text-4xl sm:text-5xl lg:text-6xl text-primary-red mb-4">⚡</div>
+                        <h3 class="text-lg sm:text-xl font-bold mb-3 text-text-dark font-display">Entrega Ultra Rápida</h3>
+                        <p class="text-sm sm:text-base text-gray-600 flex-grow">Nosso sistema de logística garante o botijão na sua porta em minutos. Velocidade de Abelha!</p>
                     </div>
 
                     <!-- Diferencial 2: Segurança -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:shadow-xl hover:scale-[1.02] transition duration-300 border-b-4 border-accent-gold">
-                        <div class="text-5xl text-accent-gold mb-4">🔒</div>
-                        <h3 class="text-xl font-bold mb-3 text-text-dark">Segurança Garantida</h3>
-                        <p class="text-gray-600">Botijões certificados e instaladores treinados para sua tranquilidade e da sua família.</p>
+                    <div class="flex-1 bg-white p-6 sm:p-8 rounded-xl shadow-lg transform hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border-b-4 border-accent-gold flex flex-col items-center text-center min-w-[250px] md:max-w-[350px]">
+                        <div class="text-4xl sm:text-5xl lg:text-6xl text-accent-gold mb-4">🔒</div>
+                        <h3 class="text-lg sm:text-xl font-bold mb-3 text-text-dark font-display">Segurança Garantida</h3>
+                        <p class="text-sm sm:text-base text-gray-600 flex-grow">Botijões certificados e instaladores treinados para sua tranquilidade e da sua família.</p>
                     </div>
 
                     <!-- Diferencial 3: Preço Justo -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:shadow-xl hover:scale-[1.02] transition duration-300 border-b-4 border-accent-yellow">
-                        <div class="text-5xl text-accent-yellow mb-4">💰</div>
-                        <h3 class="text-xl font-bold mb-3 text-text-dark">Melhor Custo-Benefício</h3>
-                        <p class="text-gray-600">Qualidade e agilidade que cabem no seu bolso. Consulte nossos preços promocionais!</p>
+                    <div class="flex-1 bg-white p-6 sm:p-8 rounded-xl shadow-lg transform hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border-b-4 border-accent-yellow flex flex-col items-center text-center min-w-[250px] md:max-w-[350px]">
+                        <div class="text-4xl sm:text-5xl lg:text-6xl text-accent-yellow mb-4">💰</div>
+                        <h3 class="text-lg sm:text-xl font-bold mb-3 text-text-dark font-display">Melhor Custo-Benefício</h3>
+                        <p class="text-sm sm:text-base text-gray-600 flex-grow">Qualidade e agilidade que cabem no seu bolso. Consulte nossos preços promocionais!</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- 3. Seção Como Pedir (Processo Simples) -->
-        <section class="py-20 bg-white">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-text-dark mb-12">
+        <section class="py-12 sm:py-16 lg:py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-text-dark mb-8 sm:mb-12 text-center font-display">
                     3 Passos Para Seu Gás Chegar
                 </h2>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-text-dark">
+                <div class="w-full flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap gap-6 sm:gap-8 justify-center items-stretch text-text-dark">
                     
                     <!-- Passo 1 -->
-                    <div class="p-6 rounded-lg">
-                        <span class="inline-block w-12 h-12 text-3xl font-black bg-primary-red text-white rounded-full flex items-center justify-center mx-auto mb-4">1</span>
-                        <h4 class="text-lg font-semibold mb-2">Chame no WhatsApp</h4>
-                        <p class="text-gray-600">Clique no botão e envie sua mensagem para iniciar o pedido.</p>
+                    <div class="flex-1 p-6 sm:p-8 rounded-lg flex flex-col items-center text-center min-w-[250px] md:max-w-[300px]">
+                        <span class="w-14 h-14 sm:w-16 sm:h-16 text-2xl sm:text-3xl font-black bg-primary-red text-white rounded-full flex items-center justify-center mb-4 shadow-lg">1</span>
+                        <h4 class="text-lg sm:text-xl font-semibold mb-3 font-display">Chame no WhatsApp</h4>
+                        <p class="text-sm sm:text-base text-gray-600 flex-grow">Clique no botão e envie sua mensagem para iniciar o pedido.</p>
                     </div>
                     
                     <!-- Passo 2 -->
-                    <div class="p-6 rounded-lg">
-                         <span class="inline-block w-12 h-12 text-3xl font-black bg-accent-gold text-white rounded-full flex items-center justify-center mx-auto mb-4">2</span>
-                        <h4 class="text-lg font-semibold mb-2">Confirme o Endereço</h4>
-                        <p class="text-gray-600">Nosso atendente confirmará a entrega e o preço final.</p>
+                    <div class="flex-1 p-6 sm:p-8 rounded-lg flex flex-col items-center text-center min-w-[250px] md:max-w-[300px]">
+                        <span class="w-14 h-14 sm:w-16 sm:h-16 text-2xl sm:text-3xl font-black bg-accent-gold text-white rounded-full flex items-center justify-center mb-4 shadow-lg">2</span>
+                        <h4 class="text-lg sm:text-xl font-semibold mb-3 font-display">Confirme o Endereço</h4>
+                        <p class="text-sm sm:text-base text-gray-600 flex-grow">Nosso atendente confirmará a entrega e o preço final.</p>
                     </div>
 
                     <!-- Passo 3 -->
-                    <div class="p-6 rounded-lg">
-                         <span class="inline-block w-12 h-12 text-3xl font-black bg-neutral-blue text-white rounded-full flex items-center justify-center mx-auto mb-4">3</span>
-                        <h4 class="text-lg font-semibold mb-2">Receba e Pague</h4>
-                        <p class="text-gray-600">Seu gás chega voando! Aceitamos cartões, Pix e dinheiro.</p>
+                    <div class="flex-1 p-6 sm:p-8 rounded-lg flex flex-col items-center text-center min-w-[250px] md:max-w-[300px]">
+                        <span class="w-14 h-14 sm:w-16 sm:h-16 text-2xl sm:text-3xl font-black bg-neutral-blue text-white rounded-full flex items-center justify-center mb-4 shadow-lg">3</span>
+                        <h4 class="text-lg sm:text-xl font-semibold mb-3 font-display">Receba e Pague</h4>
+                        <p class="text-sm sm:text-base text-gray-600 flex-grow">Seu gás chega voando! Aceitamos cartões, Pix e dinheiro.</p>
                     </div>
                 </div>
                 
                 <!-- CTA Reforçado no Processo -->
-                <a href="https://wa.me/seu-numero" target="_blank" class="cta-button inline-block mt-12 
-                    bg-accent-yellow text-text-dark text-lg font-bold uppercase 
-                    py-3 px-8 rounded-full shadow-lg hover:bg-accent-gold transition duration-300">
+                <a href="https://wa.me/+5564999635406" target="_blank" class="cta-button flex items-center justify-center mt-10 sm:mt-12 
+                    bg-accent-yellow text-text-dark text-base sm:text-lg md:text-xl font-bold uppercase font-display
+                    py-3 px-6 sm:py-4 sm:px-8 md:px-10 rounded-full shadow-lg hover:bg-accent-gold 
+                    transition-all duration-300 hover:scale-105 w-full sm:w-auto max-w-md">
                     Clique Aqui e Peça em 3 Minutos!
                 </a>
             </div>
         </section>
 
         <!-- 4. Prova Social (Depoimentos) -->
-        <section class="py-16 bg-neutral-blue text-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12">
+        <section class="py-12 sm:py-16 lg:py-20 bg-neutral-blue text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-8 sm:mb-12 font-display">
                     O Que Dizem Nossos Clientes?
                 </h2>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="w-full flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap gap-6 sm:gap-8 justify-center items-stretch">
                     
                     <!-- Depoimento 1 -->
-                    <div class="bg-neutral-blue/80 p-6 rounded-xl shadow-xl border-t-4 border-accent-gold">
-                        <div class="text-2xl text-accent-yellow mb-3">★★★★★</div>
-                        <p class="italic mb-4">"O atendimento é rápido, e a entrega superou minhas expectativas! Chegou em menos de 15 minutos. Recomendo demais!"</p>
-                        <p class="font-semibold">- Ana C., Bairro X</p>
+                    <div class="flex-1 bg-neutral-blue/80 p-6 sm:p-8 rounded-xl shadow-xl border-t-4 border-accent-gold flex flex-col min-w-[280px] md:max-w-[350px]">
+                        <div class="text-xl sm:text-2xl text-accent-yellow mb-3 flex justify-center lg:justify-start">★★★★★</div>
+                        <p class="italic mb-4 text-sm sm:text-base flex-grow">"O atendimento é rápido, e a entrega superou minhas expectativas! Chegou em menos de 15 minutos. Recomendo demais!"</p>
+                        <p class="font-semibold text-sm sm:text-base">- João Victor</p>
                     </div>
 
                     <!-- Depoimento 2 -->
-                    <div class="bg-neutral-blue/80 p-6 rounded-xl shadow-xl border-t-4 border-accent-gold">
-                        <div class="text-2xl text-accent-yellow mb-3">★★★★★</div>
-                        <p class="italic mb-4">"Sempre peço o gás aqui. O preço é o melhor e os entregadores são sempre muito educados e cuidadosos na instalação."</p>
-                        <p class="font-semibold">- João P., Centro</p>
+                    <div class="flex-1 bg-neutral-blue/80 p-6 sm:p-8 rounded-xl shadow-xl border-t-4 border-accent-gold flex flex-col min-w-[280px] md:max-w-[350px]">
+                        <div class="text-xl sm:text-2xl text-accent-yellow mb-3 flex justify-center lg:justify-start">★★★★★</div>
+                        <p class="italic mb-4 text-sm sm:text-base flex-grow">"Sempre peço o gás aqui. O preço é o melhor e os entregadores são sempre muito educados e cuidadosos na instalação."</p>
+                        <p class="font-semibold text-sm sm:text-base">- Pedro Henrique</p>
                     </div>
 
                     <!-- Depoimento 3 -->
-                    <div class="bg-neutral-blue/80 p-6 rounded-xl shadow-xl border-t-4 border-accent-gold">
-                        <div class="text-2xl text-accent-yellow mb-3">★★★★★</div>
-                        <p class="italic mb-4">"Precisava de gás urgente à noite e a Abelha Gás salvou meu jantar! Agilidade nota 10. Virou minha preferência."</p>
-                        <p class="font-semibold">- Beatriz M., Vila Nova</p>
+                    <div class="flex-1 bg-neutral-blue/80 p-6 sm:p-8 rounded-xl shadow-xl border-t-4 border-accent-gold flex flex-col min-w-[280px] md:max-w-[350px]">
+                        <div class="text-xl sm:text-2xl text-accent-yellow mb-3 flex justify-center lg:justify-start">★★★★★</div>
+                        <p class="italic mb-4 text-sm sm:text-base flex-grow">"Precisava de gás urgente à noite e a Abelha Gás salvou meu jantar! Agilidade nota 10. Virou minha preferência."</p>
+                        <p class="font-semibold text-sm sm:text-base">- Beatriz Moraes</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Instagram Feed (Novas Postagens) -->
+        <section class="py-12 sm:py-16 lg:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-8 sm:mb-12 text-text-dark font-display">
+                    Siga-nos no Instagram
+                </h2>
+                
+                <!-- Link para Instagram -->
+                <div class="flex justify-center mb-8 sm:mb-12">
+                    <a href="https://www.instagram.com/abelhagas/" target="_blank" class="flex items-center gap-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 font-display font-semibold">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.778H9.721c-.49 0-.928.438-.928.928v8.957c0 .49.438.928.928.928h6.558c.49 0 .928-.438.928-.928V8.138c0-.49-.438-.928-.928-.928zM17.349 5.99c-.49 0-.928-.438-.928-.928s.438-.928.928-.928.928.438.928.928-.438.928-.928.928zm-1.418 8.957H10.649V8.138h5.282v6.809z"/>
+                        </svg>
+                        <span>@abelhagas</span>
+                    </a>
+                </div>
+                
+                <!-- Instagram iframe Embed -->
+                <div class="w-full max-w-4xl">
+                    <iframe 
+                        src="https://www.instagram.com/abelhagas/embed" 
+                        width="100%" 
+                        height="600" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        allowtransparency="true"
+                        class="rounded-lg shadow-xl border-0"
+                        style="min-height: 600px; max-width: 100%;">
+                    </iframe>
+                </div>
+                
+                <!-- Call to Action para seguir no Instagram -->
+                <div class="mt-8 sm:mt-12 text-center">
+                    <p class="text-gray-600 mb-4 text-sm sm:text-base">
+                        Acompanhe nosso dia a dia e fique por dentro das promoções!
+                    </p>
+                    <a href="https://www.instagram.com/abelhagas/" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 font-display font-semibold">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.778H9.721c-.49 0-.928.438-.928.928v8.957c0 .49.438.928.928.928h6.558c.49 0 .928-.438.928-.928V8.138c0-.49-.438-.928-.928-.928zM17.349 5.99c-.49 0-.928-.438-.928-.928s.438-.928.928-.928.928.438.928.928-.438.928-.928.928zm-1.418 8.957H10.649V8.138h5.282v6.809z"/>
+                        </svg>
+                        <span>Seguir no Instagram</span>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-text-dark text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            <!-- Contato Rápido -->
-            <div>
-                <h4 class="text-xl font-bold mb-4 text-primary-red">Contato Imediato</h4>
-                <p class="mb-2">📞 (XX) 9XXXX-XXXX</p>
-                <p class="mb-2">📧 contato@abelhagas.com.br</p>
-                <p class="text-accent-yellow font-semibold mt-4">Atendimento 24 Horas</p>
-            </div>
+    <footer class="bg-text-dark text-white py-10 sm:py-12 lg:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Container Principal do Footer com Flexbox -->
+            <div class="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap gap-8 md:gap-10 lg:gap-12 justify-between items-start">
+                
+                <!-- Contato Rápido -->
+                <div class="flex-1 min-w-[250px] text-center md:text-left">
+                    <h4 class="text-lg sm:text-xl font-bold mb-4 text-primary-red font-display">Contato Imediato</h4>
+                    <div class="flex flex-col gap-2 justify-center md:justify-start">
+                        <p class="text-sm sm:text-base">📞 (64) 99963-5406</p>
+                        <p class="text-sm sm:text-base">📞 (64) 3636-2008</p>
+                        <p class="text-accent-yellow font-semibold mt-2 sm:mt-4 text-sm sm:text-base">Atendimento das 08h às 20h</p>
+                    </div>
+                </div>
 
-            <!-- Navegação (Simples) -->
-            <div>
-                <h4 class="text-xl font-bold mb-4 text-primary-red">Institucional</h4>
-                <ul>
-                    <li class="mb-2 hover:text-primary-red transition"><a href="#">Sobre Nós</a></li>
-                    <li class="mb-2 hover:text-primary-red transition"><a href="#">Áreas de Entrega</a></li>
-                    <li class="mb-2 hover:text-primary-red transition"><a href="#">Perguntas Frequentes</a></li>
-                </ul>
-            </div>
+                <!-- Navegação (Simples) -->
+                <div class="flex-1 min-w-[250px] text-center md:text-left">
+                    <h4 class="text-lg sm:text-xl font-bold mb-4 text-primary-red font-display">Institucional</h4>
+                    <ul class="flex flex-col gap-2">
+                        <li class="text-sm sm:text-base hover:text-primary-red transition-colors duration-300">
+                            <a href="#" class="inline-block">Sobre Nós</a>
+                        </li>
+                        <li class="text-sm sm:text-base hover:text-primary-red transition-colors duration-300">
+                            <a href="#" class="inline-block">Áreas de Entrega</a>
+                        </li>
+                        <li class="text-sm sm:text-base hover:text-primary-red transition-colors duration-300">
+                            <a href="#" class="inline-block">Perguntas Frequentes</a>
+                        </li>
+                    </ul>
+                </div>
 
-            <!-- Mapa / Endereço -->
-            <div>
-                <h4 class="text-xl font-bold mb-4 text-primary-red">Nossa Localização</h4>
-                <p class="text-sm">Rua das Colmeias, 123 - Cidade/Estado</p>
-                <!-- Embed de um Mapa Simples (Placeholder) -->
-                <div class="mt-4 bg-gray-700 h-24 rounded-lg flex items-center justify-center">
-                    <span class="text-gray-400">Placeholder do Mapa de Cobertura</span>
+                <!-- Mapa / Endereço -->
+                <div class="flex-1 min-w-[250px] text-center md:text-left">
+                    <h4 class="text-lg sm:text-xl font-bold mb-4 text-primary-red font-display">Nossa Localização</h4>
+                    <p class="text-sm sm:text-base mb-4">Rua das Colmeias, 123 - Cidade/Estado</p>
+                    <!-- Embed de um Mapa Simples (Placeholder) -->
+                    <div class="mt-3 sm:mt-4 bg-gray-700 h-20 sm:h-24 rounded-lg flex items-center justify-center">
+                        <span class="text-gray-400 text-xs sm:text-sm">Placeholder do Mapa de Cobertura</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-500">
-            &copy; 2025 Abelha Gás. Todos os direitos reservados.
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 mt-8 sm:mt-10 pt-6 sm:pt-8 flex justify-center">
+                <p class="text-xs sm:text-sm text-gray-500 text-center">
+                    &copy; 2025 Abelha Gás. Todos os direitos reservados.
+                </p>
+            </div>
         </div>
     </footer>
+
 </body>
 </html>

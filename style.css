@@ -2,12 +2,57 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: #f7f7f7; /* Um cinza muito claro para não ser branco puro */
+    overflow-x: hidden; /* Previne scroll horizontal em mobile */
 }
+
+/* Configuração das fontes para melhor hierarquia visual */
+.font-display {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Efeito de destaque para o botão principal */
 .cta-button {
     transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px -5px rgba(217, 35, 50, 0.5); /* Sombra mais forte com a cor vermelha */
+}
+
+/* Otimizações para dispositivos móveis */
+@media (max-width: 640px) {
+    /* Melhora o toque em mobile */
+    .cta-button {
+        min-height: 44px; /* Tamanho mínimo recomendado para toque */
+    }
+    
+    /* Espaçamento otimizado para mobile */
+    section {
+        scroll-margin-top: 80px;
+    }
+}
+
+/* Otimizações para tablets */
+@media (min-width: 641px) and (max-width: 1024px) {
+    /* Ajustes específicos para tablet */
+    .flex-1 {
+        flex: 1 1 auto;
+    }
+}
+
+/* Garante que imagens sejam responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Suaviza transições em todos os elementos interativos */
+a, button {
+    transition: all 0.3s ease;
 }
