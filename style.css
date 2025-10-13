@@ -1,0 +1,13 @@
+/* Estilos customizados para suavizar o background e garantir a fonte */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f7f7; /* Um cinza muito claro para não ser branco puro */
+}
+/* Efeito de destaque para o botão principal */
+.cta-button {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px -5px rgba(217, 35, 50, 0.5); /* Sombra mais forte com a cor vermelha */
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abelha Gás - O Gás Mais Rápido da Cidade!</title>
+    <!-- Carregamento do Tailwind CSS para utilitários de estilo e responsividade -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Link para o novo arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Configuração e Cores Personalizadas (Tailwind) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Paleta de Cores do Cliente
+                        'primary-red': '#D92332',
+                        'accent-yellow': '#F2E205',
+                        'accent-gold': '#E9BC0B',
+                        'neutral-blue': '#7695BC',
+                        'text-dark': '#0D0D0D',
+                        'orange-super': '#D94814',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-text-dark antialiased">
+
+    <!-- Header Fixo (Responsivo) -->
+    <header class="sticky top-0 z-10 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <!-- Logo (Utilizando a URL de placeholder com as cores da logo) -->
+            <a href="#" class="flex items-center space-x-2">
+                <img src="images/LOGO ABELHA.png" 
+                     alt="Logo Abelha Gás" 
+                     class="h-10 w-auto rounded-lg"
+                     onerror="this.onerror=null;this.src='images/LOGO ABELHA.png'">
+            </a>
+            
+            <!-- Botão de CTA no Header (Visível em Mobile e Desktop) -->
+            <a href="https://wa.me/seu-numero" target="_blank" class="cta-button 
+               bg-primary-red text-white text-sm font-semibold 
+               py-2 px-4 rounded-full shadow-lg hover:bg-red-700 transition duration-300">
+                LIGAR AGORA
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section - Proposta de Valor e CTA Primário -->
+        <section class="bg-white pt-16 pb-20 sm:pt-24 sm:pb-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:space-x-12">
+                
+                <!-- Conteúdo de Texto e CTA -->
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight text-text-dark mb-4">
+                        <span class="text-primary-red">Abelha Gás:</span> O Seu Gás Chega Mais Rápido que um Zunido!
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-gray-600 mb-8 font-medium">
+                        Entrega de GLP Rápida, Segura e com o Preço Mais Justo.
+                    </p>
+                    
+                    <!-- Botão de CTA Principal (Maior Destaque) -->
+                    <a href="https://wa.me/seu-numero" target="_blank" class="cta-button inline-block 
+                       bg-primary-red text-white text-xl font-bold uppercase 
+                       py-4 px-10 rounded-full shadow-2xl shadow-primary-red/50 
+                       hover:bg-red-700 transition duration-300 transform hover:scale-105">
+                        <span class="mr-2 inline-block"><img src="images/icons8-whatsapp.gif" alt="WhatsApp" class="w-8 h-8 inline-block"></span> PEDIR GÁS PELO WHATSAPP!
+                    </a>
+                    <p class="mt-4 text-orange-super font-bold text-lg">
+                        Disponível 24h em toda a região.
+                    </p>
+                </div>
+
+                <!-- Imagem Destaque (Logo da Abelha ou Cilindro) -->
+                <div class="lg:w-1/2 mt-12 lg:mt-0 relative flex justify-center">
+                    <!-- Placeholder visualmente atraente que lembra o mascote -->
+                    <div class="p-8 bg-accent-gold rounded-full shadow-xl w-64 h-64 sm:w-80 sm:h-80 flex items-center justify-center">
+                         <img src="images/bg-abelha.png" 
+                            alt="Mascote Abelha Gás com Botijão" 
+                            class="rounded-full shadow-2xl"
+                            onerror="this.onerror=null;this.src='images/bg-abelha.png'"">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Seção de Diferenciais (Confiança) -->
+        <section class="py-16 bg-neutral-blue/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-text-dark mb-12">
+                    Por Que Escolher a Abelha Gás?
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Diferencial 1: Rapidez -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:shadow-xl hover:scale-[1.02] transition duration-300 border-b-4 border-primary-red">
+                        <div class="text-5xl text-primary-red mb-4">⚡</div>
+                        <h3 class="text-xl font-bold mb-3 text-text-dark">Entrega Ultra Rápida</h3>
+                        <p class="text-gray-600">Nosso sistema de logística garante o botijão na sua porta em minutos. Velocidade de Abelha!</p>
+                    </div>
+
+                    <!-- Diferencial 2: Segurança -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:shadow-xl hover:scale-[1.02] transition duration-300 border-b-4 border-accent-gold">
+                        <div class="text-5xl text-accent-gold mb-4">🔒</div>
+                        <h3 class="text-xl font-bold mb-3 text-text-dark">Segurança Garantida</h3>
+                        <p class="text-gray-600">Botijões certificados e instaladores treinados para sua tranquilidade e da sua família.</p>
+                    </div>
+
+                    <!-- Diferencial 3: Preço Justo -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:shadow-xl hover:scale-[1.02] transition duration-300 border-b-4 border-accent-yellow">
+                        <div class="text-5xl text-accent-yellow mb-4">💰</div>
+                        <h3 class="text-xl font-bold mb-3 text-text-dark">Melhor Custo-Benefício</h3>
+                        <p class="text-gray-600">Qualidade e agilidade que cabem no seu bolso. Consulte nossos preços promocionais!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Seção Como Pedir (Processo Simples) -->
+        <section class="py-20 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-text-dark mb-12">
+                    3 Passos Para Seu Gás Chegar
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-text-dark">
+                    
+                    <!-- Passo 1 -->
+                    <div class="p-6 rounded-lg">
+                        <span class="inline-block w-12 h-12 text-3xl font-black bg-primary-red text-white rounded-full flex items-center justify-center mx-auto mb-4">1</span>
+                        <h4 class="text-lg font-semibold mb-2">Chame no WhatsApp</h4>
+                        <p class="text-gray-600">Clique no botão e envie sua mensagem para iniciar o pedido.</p>
+                    </div>
+                    
+                    <!-- Passo 2 -->
+                    <div class="p-6 rounded-lg">
+                         <span class="inline-block w-12 h-12 text-3xl font-black bg-accent-gold text-white rounded-full flex items-center justify-center mx-auto mb-4">2</span>
+                        <h4 class="text-lg font-semibold mb-2">Confirme o Endereço</h4>
+                        <p class="text-gray-600">Nosso atendente confirmará a entrega e o preço final.</p>
+                    </div>
+
+                    <!-- Passo 3 -->
+                    <div class="p-6 rounded-lg">
+                         <span class="inline-block w-12 h-12 text-3xl font-black bg-neutral-blue text-white rounded-full flex items-center justify-center mx-auto mb-4">3</span>
+                        <h4 class="text-lg font-semibold mb-2">Receba e Pague</h4>
+                        <p class="text-gray-600">Seu gás chega voando! Aceitamos cartões, Pix e dinheiro.</p>
+                    </div>
+                </div>
+                
+                <!-- CTA Reforçado no Processo -->
+                <a href="https://wa.me/seu-numero" target="_blank" class="cta-button inline-block mt-12 
+                    bg-accent-yellow text-text-dark text-lg font-bold uppercase 
+                    py-3 px-8 rounded-full shadow-lg hover:bg-accent-gold transition duration-300">
+                    Clique Aqui e Peça em 3 Minutos!
+                </a>
+            </div>
+        </section>
+
+        <!-- 4. Prova Social (Depoimentos) -->
+        <section class="py-16 bg-neutral-blue text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12">
+                    O Que Dizem Nossos Clientes?
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Depoimento 1 -->
+                    <div class="bg-neutral-blue/80 p-6 rounded-xl shadow-xl border-t-4 border-accent-gold">
+                        <div class="text-2xl text-accent-yellow mb-3">★★★★★</div>
+                        <p class="italic mb-4">"O atendimento é rápido, e a entrega superou minhas expectativas! Chegou em menos de 15 minutos. Recomendo demais!"</p>
+                        <p class="font-semibold">- Ana C., Bairro X</p>
+                    </div>
+
+                    <!-- Depoimento 2 -->
+                    <div class="bg-neutral-blue/80 p-6 rounded-xl shadow-xl border-t-4 border-accent-gold">
+                        <div class="text-2xl text-accent-yellow mb-3">★★★★★</div>
+                        <p class="italic mb-4">"Sempre peço o gás aqui. O preço é o melhor e os entregadores são sempre muito educados e cuidadosos na instalação."</p>
+                        <p class="font-semibold">- João P., Centro</p>
+                    </div>
+
+                    <!-- Depoimento 3 -->
+                    <div class="bg-neutral-blue/80 p-6 rounded-xl shadow-xl border-t-4 border-accent-gold">
+                        <div class="text-2xl text-accent-yellow mb-3">★★★★★</div>
+                        <p class="italic mb-4">"Precisava de gás urgente à noite e a Abelha Gás salvou meu jantar! Agilidade nota 10. Virou minha preferência."</p>
+                        <p class="font-semibold">- Beatriz M., Vila Nova</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-text-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Contato Rápido -->
+            <div>
+                <h4 class="text-xl font-bold mb-4 text-primary-red">Contato Imediato</h4>
+                <p class="mb-2">📞 (XX) 9XXXX-XXXX</p>
+                <p class="mb-2">📧 contato@abelhagas.com.br</p>
+                <p class="text-accent-yellow font-semibold mt-4">Atendimento 24 Horas</p>
+            </div>
+
+            <!-- Navegação (Simples) -->
+            <div>
+                <h4 class="text-xl font-bold mb-4 text-primary-red">Institucional</h4>
+                <ul>
+                    <li class="mb-2 hover:text-primary-red transition"><a href="#">Sobre Nós</a></li>
+                    <li class="mb-2 hover:text-primary-red transition"><a href="#">Áreas de Entrega</a></li>
+                    <li class="mb-2 hover:text-primary-red transition"><a href="#">Perguntas Frequentes</a></li>
+                </ul>
+            </div>
+
+            <!-- Mapa / Endereço -->
+            <div>
+                <h4 class="text-xl font-bold mb-4 text-primary-red">Nossa Localização</h4>
+                <p class="text-sm">Rua das Colmeias, 123 - Cidade/Estado</p>
+                <!-- Embed de um Mapa Simples (Placeholder) -->
+                <div class="mt-4 bg-gray-700 h-24 rounded-lg flex items-center justify-center">
+                    <span class="text-gray-400">Placeholder do Mapa de Cobertura</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-500">
+            &copy; 2025 Abelha Gás. Todos os direitos reservados.
+        </div>
+    </footer>
+</body>
+</html>
